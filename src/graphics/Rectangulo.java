@@ -41,10 +41,10 @@ public class Rectangulo extends FiguraGrafica {
     @Override
     public void agrandar(Graphics g) {
         lado1 += 10;
-        if (lado1 > 300) lado1 = 300;
+        if (lado1 > 250) lado1 = 250;
         this.dibujar(g);
         lado2 += 5;
-        if (lado2 > 150) lado2 = 150;
+        if (lado2 > 125) lado2 = 125;
         this.dibujar(g);
     }
     
