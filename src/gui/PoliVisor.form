@@ -6,6 +6,7 @@
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
   </SyntheticProperties>
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
@@ -58,7 +59,6 @@
           <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
             <TitledBorder title="&#xbf;Qu&#xe9; deseas dibujar?">
               <Font PropertyName="font" name="Comic Sans MS" size="14" style="0"/>
-              <Color PropertyName="color" blue="0" green="0" id="black" palette="1" red="0" type="palette"/>
             </TitledBorder>
           </Border>
         </Property>
@@ -105,11 +105,17 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Un rect&#xe1;ngulo!"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonRectanguloActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="botonTriangulo">
           <Properties>
             <Property name="text" type="java.lang.String" value="Un tri&#xe1;ngulo!"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonTrianguloActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
@@ -117,9 +123,7 @@
       <Properties>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-            <TitledBorder>
-              <Color PropertyName="color" blue="0" green="0" id="black" palette="1" red="0" type="palette"/>
-            </TitledBorder>
+            <TitledBorder/>
           </Border>
         </Property>
       </Properties>
@@ -144,7 +148,7 @@
                       <Component id="botonDerecha" max="32767" attributes="0"/>
                       <Component id="botonGrande" max="32767" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="19" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
